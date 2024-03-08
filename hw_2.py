@@ -2,6 +2,12 @@ import random
 
 def get_numbers_ticket(min, max, quantity):
     unique_random_numbers = []
+    if min_number < 0 and max_number > 1000:
+        return unique_random_numbers
+    print(unique_random_numbers)
+    else:
+        
+    
 
 
 
