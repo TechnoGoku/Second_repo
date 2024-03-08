@@ -7,7 +7,7 @@ def get_numbers_ticket(min, max, quantity):
         if min_number >= 1 and max_number <= 1000:
             unique_random_numbers = random.sample(ranges, k=quantity_number)
             sorted_unique_numbers = sorted(unique_random_numbers)
-            print(sorted_unique_numbers)
+            print(f"Ваші числа: {sorted_unique_numbers}")
             return sorted_unique_numbers
         else:
             print("Потрібно ввести числа у межах заданих параметрів.")
