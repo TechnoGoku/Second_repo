@@ -1,12 +1,17 @@
 import random
 
 def get_numbers_ticket(min, max, quantity):
-    unique_random_numbers = []
-    if min_number < 0 and max_number > 1000:
+    unique_random_numbers = list()
+    ranges = list(range(min_number,max_number))
+    if min_number >= 1 and max_number <= 1000:
+        unique_random_numbers = random.sample(ranges, k=quantity_number)
+        print(unique_random_numbers)
         return unique_random_numbers
-    print(unique_random_numbers)
     else:
-        
+        print("Потрібно ввести числа у межах заданих параметрів.")
+        print(unique_random_numbers)
+        return unique_random_numbers
+    
     
 
 
@@ -17,6 +22,6 @@ min_number = int(input("Введіть вашу мінімальну цифру 
 max_number = int(input("Введіть вашу максимальну цифру не більше 1000: "))
 quantity_number = int(input("Введіть кількість чисел, які потрібно обрати між мінимальним та максимальним значенням: "))
 get_numbers_ticket(min_number, max_number, quantity_number)
-print(min_number)
-print(max_number)
-print(quantity_number)
+# print(min_number)
+# print(max_number)
+# print(quantity_number)
